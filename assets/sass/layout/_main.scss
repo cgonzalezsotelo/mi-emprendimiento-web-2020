@@ -1,0 +1,192 @@
+.main {
+  width: 100%;
+  padding: 1rem;
+}
+
+@media (min-width: 992px) {
+  .main {
+    display: flex;
+  }
+}
+
+.section-left,
+.section-right {
+  width: 100%;
+  border: 2px solid $black;
+  padding: 1rem;
+}
+
+.section-left {
+  margin-bottom: .5rem;
+}
+
+@media (min-width: 992px) {
+  .section-left {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.html-css {
+  width: 100%;
+  border: 1px solid gray;
+  padding: .5rem;
+  margin-bottom: .5rem;
+  &__img {
+    width: 100%;
+  }
+  &__title {
+    @include title-ubuntu-bold;
+    font-size: $large;
+    padding: 1rem 0;
+  }
+  &__text {
+    @include paragraph-poppins-regular;
+    font-size: $medium;
+    text-align: justify;
+  }
+  &__instructor {
+    @include title-ubuntu-bold;
+    font-size: $medium;
+    padding: 0.5rem 0;
+  }
+}
+
+.icons {
+  display: flex;
+  padding: 0.5rem 0;
+  &__like,
+  &__comments,
+  &__views,
+  &__shares {
+    display: flex;
+  }
+  &__icon {
+    padding-right: 0.3rem;
+  }
+  &__number {
+    padding-right: 0.8rem;
+  }
+}
+
+.sass {
+  width: 100%;
+  border: 1px solid gray;
+  padding: .5rem;
+  margin-bottom: .5rem;
+  &__img {
+    width: 100%;
+  }
+  &__title {
+    @include title-ubuntu-bold;
+    font-size: $large;
+    padding: 1rem 0;
+  }
+  &__text {
+    @include paragraph-poppins-regular;
+    font-size: $medium;
+    text-align: justify;
+  }
+  &__instructor {
+    @include title-ubuntu-bold;
+    font-size: $medium;
+    padding: 0.5rem 0;
+  }
+}
+
+.courses {
+  width: 100%;
+  text-align: center;
+  &__img {
+    width: 70%;
+    border: 1px solid $black;
+    border-radius: 50%;
+  }
+  @media (min-width: 992px) {
+    &__img {
+      width: 50%;
+    }
+  }
+  &__title {
+    @include title-ubuntu-bold;
+    text-align: center;
+  }
+  &__text {
+    @include paragraph-poppins-regular;
+    text-align: justify;
+  }
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  font-size: $large;
+  &__facebook,
+  &__twitter,
+  &__github {
+    padding-right: 1rem;
+  }
+}
+
+.more-courses {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  &__title {
+    background-color: $sable;
+    color: $white;
+    text-align: center;
+    @include title-ubuntu-bold;
+    padding: 0.5rem 0;
+  }
+  &__list {
+    padding-top: 1rem;
+    list-style: circle;
+    line-height: 1.5rem;
+    text-align: left;
+  }
+  &__items > a {
+    text-decoration: none;
+    @include paragraph-poppins-regular;
+  }
+  &__img {
+    padding: 2rem 0;
+  }
+  @media (min-width: 992px) {
+    &__img {
+      width: 30%;
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+      transform: translate(0, 0);
+  }
+  50% {
+      transform: translate(150px, 0);
+  }
+  100% {
+      transform: translate(0, 0);
+  }
+}
+
+@keyframes rotateCog {
+  0% {
+      transform: rotate(0);
+      transform-origin: 80% 80%;
+  }
+  100% {
+      transform: rotate(360deg);
+      transform-origin: 80% 80%;
+  }
+}
+
+.code {
+  animation: slide 4s linear infinite;
+}
+
+.cog {
+  animation: rotateCog 6s linear infinite;
+}

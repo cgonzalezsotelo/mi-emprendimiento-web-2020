@@ -1,0 +1,19 @@
+@media (min-width: 992px) {
+    .container-grid {
+        display: grid;
+        grid-template: 100% 1fr 100%/ 50% 50%;
+        grid-template-areas: "header header" "main main" "footer footer";
+    }
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}

@@ -1,0 +1,9 @@
+@mixin title-ubuntu-bold {
+  font-family: $ubuntu;
+  font-weight: $ubuntoBold;
+}
+
+@mixin paragraph-poppins-regular {
+  font-family: $poppins;
+  font-weight: $poppinsRegular;
+}

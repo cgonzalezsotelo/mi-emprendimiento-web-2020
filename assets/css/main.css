@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.footer__btn {
+  background-color: #ffa500;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #2e1503;
+  transition: all 200ms ease-in-out;
+}
+.footer__btn:hover {
+  background-color: #ffffff;
+}
+
+.footer__email {
+  padding: 0.6rem 0.2rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.footer__email:focus {
+  background-color: #ffa500;
+}
+
+@media (min-width: 992px) {
+  .container-grid {
+    display: grid;
+    grid-template: 100% 1fr 100%/50% 50%;
+    grid-template-areas: "header header" "main main" "footer footer";
+  }
+}
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.header {
+  width: 100%;
+}
+.header__hero {
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  background-color: #000000;
+  padding: 0.6rem 1rem;
+}
+.nav__logo {
+  width: 3rem;
+}
+.nav__list {
+  display: none;
+  list-style: none;
+  padding: 1rem 1rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .nav__list {
+    display: inline-block;
+  }
+}
+.nav__items > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__list {
+    display: flex;
+  }
+  .nav__items {
+    padding-right: 1rem;
+  }
+}
+.hamburger-icon {
+  position: relative;
+  float: right;
+  font-size: 35px;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+.hamburger-icon:hover {
+  color: #ffa500;
+}
+
+@media (min-width: 992px) {
+  .hamburger-icon {
+    display: none;
+  }
+}
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + .nav__list {
+  display: block;
+}
+
+.main {
+  width: 100%;
+  padding: 1rem;
+}
+
+@media (min-width: 992px) {
+  .main {
+    display: flex;
+  }
+}
+.section-left,
+.section-right {
+  width: 100%;
+  border: 2px solid #000000;
+  padding: 1rem;
+}
+
+.section-left {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .section-left {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+}
+.html-css {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.html-css__img {
+  width: 100%;
+}
+.html-css__title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 1rem 0;
+}
+.html-css__text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+}
+.html-css__instructor {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0.5rem 0;
+}
+
+.icons {
+  display: flex;
+  padding: 0.5rem 0;
+}
+.icons__like, .icons__comments, .icons__views, .icons__shares {
+  display: flex;
+}
+.icons__icon {
+  padding-right: 0.3rem;
+}
+.icons__number {
+  padding-right: 0.8rem;
+}
+
+.sass {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.sass__img {
+  width: 100%;
+}
+.sass__title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 1rem 0;
+}
+.sass__text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+}
+.sass__instructor {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0.5rem 0;
+}
+
+.courses {
+  width: 100%;
+  text-align: center;
+}
+.courses__img {
+  width: 70%;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+@media (min-width: 992px) {
+  .courses__img {
+    width: 50%;
+  }
+}
+.courses__title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+.courses__text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  font-size: 20px;
+}
+.social-media__facebook, .social-media__twitter, .social-media__github {
+  padding-right: 1rem;
+}
+
+.more-courses {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+.more-courses__title {
+  background-color: #060606;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+.more-courses__list {
+  padding-top: 1rem;
+  list-style: circle;
+  line-height: 1.5rem;
+  text-align: left;
+}
+.more-courses__items > a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.more-courses__img {
+  padding: 2rem 0;
+}
+@media (min-width: 992px) {
+  .more-courses__img {
+    width: 30%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(150px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes rotateCog {
+  0% {
+    transform: rotate(0);
+    transform-origin: 80% 80%;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 80% 80%;
+  }
+}
+.code {
+  animation: slide 4s linear infinite;
+}
+
+.cog {
+  animation: rotateCog 6s linear infinite;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding: 1rem;
+}
+@media (min-width: 992px) {
+  .footer__wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+.footer__list {
+  list-style: none;
+  padding: 1rem 0;
+}
+.footer__items > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+@media (min-width: 992px) {
+  .footer__list {
+    display: flex;
+  }
+  .footer__items {
+    padding-right: 1rem;
+  }
+}
+.footer__wrapper-email {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .footer__wrapper-email {
+    display: inline-block;
+  }
+}
+.footer__email {
+  width: 100%;
+  margin: 0 4rem;
+}
+@media (min-width: 992px) {
+  .footer .footer__email {
+    width: 150px;
+    margin: 0 1rem;
+    padding: 0.6rem 0;
+  }
+}
+.footer__btn {
+  margin: 1rem 0;
+}
+
+@media (min-width: 992px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,11 @@
+.footer__btn {
+    background-color: $orange;
+    padding: .6rem 1.5rem;
+    border-radius: 5px;
+    font-size: $large;
+    color: $charcoal;
+    transition: all 200ms ease-in-out;
+    &:hover {
+        background-color: $white;
+    }
+}
